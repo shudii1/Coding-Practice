@@ -1,10 +1,43 @@
 
 #include <iostream>
 #include <algorithm>
+#include<vector>
 using namespace std;
 
-#include "solution.h"
-//void intersection(int *arr1, int *arr2, int n, int m)
+
+void intersection(int *arr1, int *arr2, int n, int m)
+{
+    vector<int>v;
+    //sort both arrasy
+    sort(arr1,arr1+n);
+    sort(arr2,arr2+m);
+
+    int i=0,j=0;
+
+    while(i<n || j<m)
+    {
+
+        if(arr1[i]==arr2[j])
+        {
+            v.push_back(arr1[i]);
+            i++;
+            j++;
+
+        }
+        else if(arr1[i]>arr2[j])
+        {
+            j++;
+        }
+        else{
+            i++;
+        }
+    }
+    for(int c=0;c<v.size();c++)
+    {
+
+        cout<<v[c]<<" ";
+    }
+}
 int main()
 {
 	int t;
