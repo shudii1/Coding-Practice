@@ -1,0 +1,66 @@
+ Reverse string Word Wise
+
+Reverse the given string word wise. That is, the last word in given string should come at 1st place, last second word at 2nd place and so on. Individual words should remain as it is.
+Input format :
+String in a single line
+Output format :
+Word wise reversed string in a single line
+Constraints :
+0 <= |S| <= 10^7
+where |S| represents the length of string, S.
+
+Sample Input 1:
+Welcome to Coding Ninjas
+Sample Output 1:
+Ninjas Coding to Welcome
+
+Sample Input 2:
+Always indent your code
+Sample Output 2:
+code your indent Always
+====================================================================================================================================================
+Largest Unique Substring
+
+-Given a string S, find the largest substring with no repetition i.e. largest substring which contain all unique characters.
+Input Format :
+String S
+Output Format :
+Largest unique substring
+Constraints :
+1 <= Length os String S <= 10^3
+
+Sample Input:
+abcdabceb
+Sample Output:
+dabce
+======================================================================================================================================
+Palindrome substrings
+
+Given a string S, count and return the number of substrings of S that are palindrome.
+Single length substrings are also palindromes. You just need to calculate the count, not the substrings.
+Input Format :
+String S
+Output Format :
+count of palindrome substrings
+Constraints :
+1 <= Length of S <= 1000
+Sample Input :
+aba
+Sample Output :
+4
+**Note : Here 4 corresponds to ("a","b","a","aba").
+========================================================================================================================
+Break words
+
+You are given a sentence contained in given string S. Write a function which will replace all the words within the sentence whose length is even and greater than equal to 4, with a space between the two equal halves of the word.
+Space complexity should be O(1).
+Input Format :
+String S
+Output Format :
+Updated string
+Constraints :
+1 <= Length of S <= 10000
+Sample Input :
+Helloo world good morniing
+Sample Output :
+Hel loo world go od morn iing
